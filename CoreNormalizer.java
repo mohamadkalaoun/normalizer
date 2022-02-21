@@ -279,25 +279,4 @@ public class CoreNormalizer implements Normalizer {
 
 		return BigDecimal.valueOf(Collections.max(list)).setScale(2, RoundingMode.HALF_EVEN);
 	}
-
-//	public static void main(String[] args) {
-//
-//		System.out.println("Hello Core");
-//
-//		try {
-//			CoreNormalizer core = new CoreNormalizer();
-//
-//			Path induction = Files.createTempDirectory("induction");
-//			String columnName = "mark";
-//			Path csvPath = Paths.get("C:\\jordan\\interview-task-main\\src\\test\\resources\\generated.csv");
-//			Path destPath = induction.resolve("generated_scaled.csv");
-//
-////			ScoringSummary test4MinMax = core.minMaxScaling(csvPath, destPath, "age");
-//			ScoringSummary test4zScore = core.zscore(csvPath, destPath, "age");
-//			BigDecimal a = test4zScore.variance();
-//			System.out.println("why you are reading this ?");
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//	}
 }
